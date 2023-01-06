@@ -104,10 +104,7 @@ export function useTodo() {
         } 
     }
 
-    const initializeStaticUser = () => {
-        setInitialized(true)   
-    }
-
+  
     const addTodo = async (e) =>{
         if(program && publicKey) {
             try{
@@ -203,5 +200,5 @@ export function useTodo() {
     const incompleteTodos = useMemo(() => todos.filter((todo) => !todo.account.marked), [todos])
     const completedTodos = useMemo(() => todos.filter((todo) => todo.account.marked), [todos])
 
-    return { initialized, initializeStaticUser, loading, transactionPending, completedTodos, incompleteTodos , input, tag ,assigne ,  setInput, handleChange  , tagHandleChange , assigneChangeHandler ,  initializeUser, addTodo , markTodo,removeTodo , selectTagFromTag}
+    return { initialized, loading, transactionPending, completedTodos, incompleteTodos , input, tag ,assigne ,  setInput, handleChange  , tagHandleChange , assigneChangeHandler ,  initializeUser, addTodo , markTodo,removeTodo , selectTagFromTag}
 }
