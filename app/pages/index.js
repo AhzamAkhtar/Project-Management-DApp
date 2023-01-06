@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 const Home = () => {
-    const { initialized, initializeStaticUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo, markStaticTodo,removeStaticTodo, addStaticTodo, input,tag  , assigne  , tagHandleChange , assigneChangeHandler,  handleChange , initializeUser , selectTagFromTag } = useTodo()
+    const { initialized, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo,   input,tag  , assigne  , tagHandleChange , assigneChangeHandler,  handleChange , initializeUser , selectTagFromTag } = useTodo()
 
     const [finalTag,setFinalTag] = useState("")
     const [finalAssigne,setFinalAssigne] = useState("")
